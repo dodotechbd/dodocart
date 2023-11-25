@@ -1,22 +1,6 @@
-import { Inter } from 'next/font/google';
-import Head from 'next/head';
-
-const inter = Inter({ subsets: ['latin'] });
-
 export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <Head>
-        <title>DodoCart - Your Online Shopping Destination</title>
-        <meta name="description" content="Welcome to DodoCart - Your Online Shopping Destination" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <header className="bg-blue-500 text-white text-center py-4">
-        <h1 className="text-3xl font-semibold">DodoCart</h1>
-        <p>Your Online Shopping Destination</p>
-      </header>
-
       <main className="container mx-auto my-8">
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card />
@@ -27,10 +11,6 @@ export default function Home() {
           <Card />
         </section>
       </main>
-
-      <footer className="bg-blue-500 text-white text-center py-4">
-        <p>&copy; 2023 DodoCart. All rights reserved.</p>
-      </footer>
     </div>
   );
 }
