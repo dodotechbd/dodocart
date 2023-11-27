@@ -1,4 +1,4 @@
-import { Love } from '@components/icons';
+import { Cart, Love, Profile } from '@components/icons';
 import { useState } from 'react';
 
 export const Nav = () => {
@@ -17,7 +17,7 @@ export const Nav = () => {
             <span className="text-3xl text-indigo-600">
               <i className="fa-solid fa-headphones"></i>
             </span>
-            Designer
+            dodoTack
           </div>
 
           <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-5 cursor-pointer lg:hidden">
@@ -37,7 +37,11 @@ export const Nav = () => {
                 {link.name}{' '}
               </li>
             ))}
-            {/* <Button>LOGIN</Button> */}
+            <div className="flex gap-5 ml-2">
+              <Love />
+              <Cart />
+              <Profile />
+            </div>
             {/* <Button>GET STARTED</Button> */}
           </ul>
         </div>
