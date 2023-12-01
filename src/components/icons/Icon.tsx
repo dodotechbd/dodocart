@@ -8,6 +8,7 @@ const Icon = (props: IIconProps) => {
       className={className}
       height={height || size}
       width={size || 'auto'}
+      fill={props.fill || 'none'}
       {...otherProps}
     >
       {title ? <title>{title}</title> : null}

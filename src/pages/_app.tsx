@@ -8,8 +8,8 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Dodo Cart</title>
-        <meta name="description" content="Dodo Cart App" />
+        <title>Dodohub</title>
+        <meta name="description" content="Dodohub App" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
