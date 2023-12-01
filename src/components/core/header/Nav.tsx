@@ -1,24 +1,28 @@
+/* eslint-disable prettier/prettier */
 import { Cart, Love, Profile } from '@components/icons';
 import { useState } from 'react';
 
 export const Nav = () => {
   const [open, setOpen] = useState(false);
   const links = [
-    { name: 'HOME', link: '/' },
-    { name: 'SERVICE', link: '/' },
-    { name: 'ABOUT', link: '/' },
-    { name: 'CONTACT', link: '/' },
+    { name: 'Home', link: '/' },
+    { name: 'About', link: '/' },
+    { name: 'Contact Us', link: '/' },
+    { name: 'Blog', link: '/' },
   ];
   return (
     <header>
       <div className="shadow-md w-full fixed top-0 left-0">
-        <div className="lg:flex items-center justify-between bg-white py-4 lg:px-10 px-10">
+        <div className="lg:flex items-center justify-between bg-white py-4 lg:px-20 px-10">
           <div className="font-bold text-2xl cursor-pointer flex items-center font-[poppins] text-gray-800 gap-3">
             <span className="text-3xl text-indigo-600">
               <i className="fa-solid fa-headphones"></i>
             </span>
             dodoTack
           </div>
+          <label>
+            <input name="myInput" type="text" className="bg-gray-100 p-3 px-10 h-2/4 rounded " placeholder="search" />
+          </label>
 
           <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-5 cursor-pointer lg:hidden">
             {open ? <Love /> : <Love />}
@@ -32,7 +36,7 @@ export const Nav = () => {
             {links.map((link) => (
               <li
                 key={link.name}
-                className="lg:ml-8 lg:my-0 my-7 text-xl cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 "
+                className="lg:ml-8 lg:my-0 my-7 text-xl  cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 "
               >
                 {link.name}{' '}
               </li>
