@@ -1,60 +1,62 @@
-/* eslint-disable prettier/prettier */
-import { Cart, Love, Profile } from '@components/icons';
+import { Burger, Cart, Logo, Love, Profile, Search } from '@components/icons';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
+
+type LinkType = {
+  name: string;
+  route: string;
+};
 
 export const Nav = () => {
-  const [open, setOpen] = useState(false);
-  const links = [
-    { name: 'Home', Link: '/' },
-    { name: 'About', link: '/' },
-    { name: 'Contact Us', link: '/' },
-    { name: 'Blog', link: '/product' },
+  const router = useRouter();
+  const { route } = router;
+  const links: LinkType[] = [
+    { name: 'Home', route: '/' },
+    { name: 'About', route: '/about' },
+    { name: 'Contact Us', route: '/contactus' },
+    { name: 'Blog', route: '/blog' },
   ];
   return (
-    <header className="mb-20">
-      <div className="w-full fixed top-0 left-0 shadow-md">
-        <div className="lg:flex items-center justify-between bg-white py-4 lg:px-20 px-10">
-          <div className="font-bold text-2xl cursor-pointer flex items-center font-[poppins] text-gray-800 gap-3">
-            <Link href="/">dodoTack</Link>
-          </div>
-          <label>
-            <input name="myInput" type="text" className="bg-gray-100 p-3 px-10 h-2/4 rounded " placeholder="search" />
-          </label>
-
-          <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-5 cursor-pointer lg:hidden">
-            {open ? <Love /> : <Love />}
-          </div>
-
-          <ul
-            className={`lg:flex md:items-center md:pb-3 pb-12 absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
-              open ? 'top-18 opacity-100' : 'top-[-490px] lg:opacity-100 opacity-0'
-            }`}
-          >
-            {links.map((link) => (
-              <li
-                key={link.name}
-                className="lg:ml-8 lg:my-0 my-7 text-xl  cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 "
-              >
-                {link.name}{' '}
-              </li>
-            ))}
-            {/* difrent way for nav  */}
-            {/* <li className="lg:ml-8 lg:my-0 my-7 text-xl  cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 ">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="lg:ml-8 lg:my-0 my-7 text-xl  cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 ">
-              <Link href="/about">About Us</Link>
-            </li> */}
-
-            <div className="flex gap-5 ml-2">
-              <Love />
-              <Cart />
-              <Profile />
-            </div>
-            {/* <Button>GET STARTED</Button> */}
-          </ul>
+    <header>
+      <div className="flex items-center lg:justify-start justify-between gap-8 container mx-auto lg:px-20 px-4 lg:py-4 py-6">
+        <Link href="/">
+          <Logo width="138" height="32" />
+        </Link>
+        <div className="relative w-full lg:block hidden">
+          <Search className="absolute top-1/2 -translate-y-1/2 left-4" stroke="#989898" size={24} />
+          <input
+            name="myInput"
+            type="text"
+            className="w-full p-4 text-sm outline-none rounded-lg bg-[#F5F5F5] pl-12"
+            placeholder="Search"
+          />
         </div>
+        <ul className="lg:flex hidden gap-12 whitespace-nowrap">
+          {links.map((link: LinkType, idx: number) => (
+            <li key={idx}>
+              <Link
+                href={link.route}
+                className={`font-medium ${link.route === route ? 'opacity-100' : 'opacity-30 hover:opacity-100'}`}
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="lg:flex hidden gap-6">
+          <button>
+            <Love />
+          </button>
+          <button>
+            <Cart />
+          </button>
+          <button>
+            <Profile />
+          </button>
+        </div>
+        <button className="lg:hidden">
+          <Burger size={40} fill="#080341" />
+        </button>
       </div>
     </header>
   );
