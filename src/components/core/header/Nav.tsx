@@ -1,24 +1,22 @@
 /* eslint-disable prettier/prettier */
 import { Cart, Love, Profile } from '@components/icons';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export const Nav = () => {
   const [open, setOpen] = useState(false);
   const links = [
-    { name: 'Home', link: '/' },
+    { name: 'Home', Link: '/' },
     { name: 'About', link: '/' },
     { name: 'Contact Us', link: '/' },
-    { name: 'Blog', link: '/' },
+    { name: 'Blog', link: '/product' },
   ];
   return (
-    <header>
-      <div className="shadow-md w-full fixed top-0 left-0">
+    <header className="mb-20">
+      <div className="w-full fixed top-0 left-0 shadow-md">
         <div className="lg:flex items-center justify-between bg-white py-4 lg:px-20 px-10">
           <div className="font-bold text-2xl cursor-pointer flex items-center font-[poppins] text-gray-800 gap-3">
-            <span className="text-3xl text-indigo-600">
-              <i className="fa-solid fa-headphones"></i>
-            </span>
-            dodoTack
+            <Link href="/">dodoTack</Link>
           </div>
           <label>
             <input name="myInput" type="text" className="bg-gray-100 p-3 px-10 h-2/4 rounded " placeholder="search" />
@@ -41,6 +39,14 @@ export const Nav = () => {
                 {link.name}{' '}
               </li>
             ))}
+            {/* difrent way for nav  */}
+            {/* <li className="lg:ml-8 lg:my-0 my-7 text-xl  cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 ">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="lg:ml-8 lg:my-0 my-7 text-xl  cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 ">
+              <Link href="/about">About Us</Link>
+            </li> */}
+
             <div className="flex gap-5 ml-2">
               <Love />
               <Cart />
