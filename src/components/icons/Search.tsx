@@ -2,7 +2,7 @@ import { IIconProps } from '@interfaces';
 import Icon from './Icon';
 
 export const Search = (props: IIconProps) => {
-  const { title = 'Search', size, ...otherProps } = props;
+  const { title = 'Search', size = '24', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 24 24" size={size} title={title} {...otherProps}>
       <path

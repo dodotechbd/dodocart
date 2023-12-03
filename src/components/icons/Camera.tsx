@@ -2,7 +2,7 @@ import { IIconProps } from '@interfaces';
 import Icon from './Icon';
 
 export const Camera = (props: IIconProps) => {
-  const { title = 'Camera', size, ...otherProps } = props;
+  const { title = 'Camera', size = '48', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 48 48" size={size} title={title} {...otherProps}>
       <g clip-path="url(#clip0_153_306)">
@@ -31,7 +31,7 @@ export const Camera = (props: IIconProps) => {
 };
 
 export const CameraBold = (props: IIconProps) => {
-  const { title = 'Camera', size, ...otherProps } = props;
+  const { title = 'Camera', size = '24', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 24 24" size={size} title={title} {...otherProps}>
       <path
@@ -53,7 +53,7 @@ export const CameraBold = (props: IIconProps) => {
 };
 
 export const MainCamera = (props: IIconProps) => {
-  const { title = 'MainCamera', size, ...otherProps } = props;
+  const { title = 'MainCamera', size = '24', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 24 24" size={size} title={title} {...otherProps}>
       <path
@@ -67,7 +67,7 @@ export const MainCamera = (props: IIconProps) => {
 };
 
 export const FrontCamera = (props: IIconProps) => {
-  const { title = 'FrontCamera', size, ...otherProps } = props;
+  const { title = 'FrontCamera', size = '24', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 24 24" size={size} title={title} {...otherProps}>
       <path

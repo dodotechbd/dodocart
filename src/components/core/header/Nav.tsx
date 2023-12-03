@@ -1,4 +1,4 @@
-import { Burger, Cart, Favorite, Logo, Profile, Search } from '@components/icons';
+import { Burger, Cart, Favorite, Logo, Search, User } from '@components/icons';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -51,7 +51,7 @@ export const Nav = () => {
             <Cart />
           </button>
           <button>
-            <Profile />
+            <User />
           </button>
         </div>
         <button className="lg:hidden">

@@ -1,3 +1,4 @@
+export * from './Arrow';
 export * from './Burger';
 export * from './Camera';
 export * from './Cart';
@@ -7,6 +8,6 @@ export * from './HeadPhone';
 export * from './Icon';
 export * from './Logo';
 export * from './Phone';
-export * from './Profile';
 export * from './Search';
 export * from './SmartWatch';
+export * from './User';

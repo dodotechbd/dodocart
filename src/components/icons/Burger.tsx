@@ -2,7 +2,7 @@ import { IIconProps } from '@interfaces';
 import Icon from './Icon';
 
 export const Burger = (props: IIconProps) => {
-  const { title = 'Burger', size, ...otherProps } = props;
+  const { title = 'Burger', size = '40', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 40 40" size={size} title={title} {...otherProps}>
       <path

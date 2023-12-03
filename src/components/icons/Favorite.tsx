@@ -2,7 +2,7 @@ import { IIconProps } from '@interfaces';
 import Icon from './Icon';
 
 export const Favorite = (props: IIconProps) => {
-  const { title = 'Favorite', size, ...otherProps } = props;
+  const { title = 'Favorite', size = '32', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 32 32" size={size} title={title} {...otherProps}>
       <path

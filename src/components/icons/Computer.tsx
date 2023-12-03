@@ -2,7 +2,7 @@ import { IIconProps } from '@interfaces';
 import Icon from './Icon';
 
 export const Computer = (props: IIconProps) => {
-  const { title = 'Computer', size, ...otherProps } = props;
+  const { title = 'Computer', size = '48', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 48 48" size={size} title={title} {...otherProps}>
       <g clip-path="url(#clip0_153_288)">
@@ -46,7 +46,7 @@ export const Computer = (props: IIconProps) => {
 };
 
 export const ComputerBold = (props: IIconProps) => {
-  const { title = 'Computer', size, ...otherProps } = props;
+  const { title = 'Computer', size = '24', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 24 24" size={size} title={title} {...otherProps}>
       <path
