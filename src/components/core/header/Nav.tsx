@@ -1,4 +1,4 @@
-import { Burger, Cart, Logo, Love, Profile, Search } from '@components/icons';
+import { Burger, Cart, Favorite, Logo, Search, User } from '@components/icons';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -23,7 +23,7 @@ export const Nav = () => {
           <Logo width="138" height="32" />
         </Link>
         <div className="relative w-full lg:block hidden">
-          <Search className="absolute top-1/2 -translate-y-1/2 left-4" stroke="#989898" size={24} />
+          <Search className="absolute top-1/2 -translate-y-1/2 left-4" color="#989898" size={24} />
           <input
             name="myInput"
             type="text"
@@ -45,13 +45,13 @@ export const Nav = () => {
         </ul>
         <div className="lg:flex hidden gap-6">
           <button>
-            <Love />
+            <Favorite />
           </button>
           <button>
             <Cart />
           </button>
           <button>
-            <Profile />
+            <User />
           </button>
         </div>
         <button className="lg:hidden">
