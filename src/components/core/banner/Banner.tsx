@@ -3,16 +3,18 @@ import { Button } from '../buttons';
 
 export const Banner = () => {
   return (
-    <div className="container mx-auto bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ...">
-      <div className="flex items-center px-40 ">
-        <div>
+    <div className="container mx-auto max-h-[600px] overflow-hidden bg-gradient-to-r from-[#211C24] to-[#211C24] ...">
+      <div className="flex items-center justify-between lg:px-40 ">
+        <div className="text-white">
           <p>Pro.Beyond.</p>
-          <h1 className="text-8xl">IPhone 14 Pro</h1>
+          <h1 className="lg:text-8xl">
+            IPhone 14 <span className="font-semibold">Pro</span>
+          </h1>
           <span>Created to change everything for the better. For everyone</span>
-          <Button className="py-4 px-14">Shop Now</Button>
+          <Button className="py-4 mt-6 px-14 text-white border-white">Shop Now</Button>
         </div>
-        <div>
-          <Image width={300} height={300} src="/public/images/phone.png" alt="banner" />
+        <div className="mt-16">
+          <Image width={300} height={300} src="/images/phone.png" alt="banner" />
         </div>
       </div>
     </div>
