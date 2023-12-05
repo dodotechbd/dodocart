@@ -16,7 +16,7 @@ export const Sub = () => {
   //   { name: 'phone', icon: <Cart /> },
   // ];
   return (
-    <div className="lg:flex  gap-4 py-2 container mx-auto items-center justify-between lg:px-20 px-4 bg-[#2E2E2E] text-white text-base">
+    <div className="lg:flex  gap-4 py-2 container mx-auto items-center justify-between lg:px-20 px-4 bg-[#2E2E2E] text-white text-white">
       <div className="flex gap-2 border-r-2 items-center ">
         <PhoneBold color="#989898" />
         <Link href="/">
@@ -41,7 +41,7 @@ export const Sub = () => {
       </div>
       <div className="flex gap-2">
         <GamingBold className="w-6" color="#989898" />
-        <label>geming</label>
+        <label>Gaming</label>
       </div>
 
       {/* {navLink.map((nav) => (
