@@ -3,7 +3,7 @@ import { Button } from '../buttons';
 
 export const Banner = () => {
   return (
-    <div className="container mx-auto max-h-[600px] overflow-hidden bg-gradient-to-r from-[#211C24] to-[#211C24] ...">
+    <div className="bg-gradient-to-r from-[#211C24] to-[#211C24] ... container mx-auto max-h-[600px] overflow-hidden ">
       <div className="flex items-center justify-between lg:px-40 ">
         <div className="text-white">
           <p>Pro.Beyond.</p>
@@ -14,7 +14,7 @@ export const Banner = () => {
           <Button className="py-4 mt-6 px-14 text-white border-white">Shop Now</Button>
         </div>
         <div className="mt-16">
-          <Image width={300} height={300} src="/images/phone.png" alt="banner" />
+          <Image width={250} height={600} src="/images/phone.png" alt="banner" />
         </div>
       </div>
     </div>
