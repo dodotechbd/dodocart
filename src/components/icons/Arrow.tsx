@@ -17,7 +17,7 @@ export const ArrowDown = (props: IIconProps) => {
   const { title = 'Arrow Down', size = '24', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 24 24" size={size} title={title} {...otherProps}>
-      <path d="M18 9L12 15L6 9" stroke={props.color || 'black'} stroke-width="1.5" stroke-linecap="round" />
+      <path d="M18 9L12 15L6 9" stroke={props.color || 'black'} strokeWidth="1.5" strokeLinecap="round" />
     </Icon>
   );
 };
