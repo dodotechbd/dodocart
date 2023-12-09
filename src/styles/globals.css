@@ -2,21 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.from-thumb::-webkit-slider-thumb {
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
   -webkit-appearance: none;
-  pointer-events: all;
-  width: 24px;
-  height: 24px;
-  background-color: red;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #000000;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
 }
-.to-thumb::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  pointer-events: all;
-  width: 24px;
-  height: 24px;
-  background-color: blue;
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+  background-color: #000000;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
 }
