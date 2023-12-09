@@ -1,4 +1,4 @@
-import { ErrorBoundaryFallback, Footer, Nav } from '@components/core';
+import { Banner, ErrorBoundaryFallback, Footer, Nav } from '@components/core';
 import '@styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -14,6 +14,7 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <div>
         <Nav />
+        <Banner />
         <Component {...pageProps} />
         <Footer />
       </div>
