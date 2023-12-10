@@ -27,7 +27,7 @@ What things you need to install the software and how to install them :
 2. Go into the project directory
 
    ```bash
-   cd dodocart/
+   cd dodotech-ecommerce/
    ```
 
 
