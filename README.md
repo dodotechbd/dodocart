@@ -41,4 +41,4 @@ What things you need to install the software and how to install them :
     ```bash
     yarn install
    ```
-5. Create `.env` in *client* directory and `.env.development` in *server* directory. Paste the environment variables you get from any team member.
+5. Create `.env` in *project* directory. Paste the environment variables you get from any team member.
