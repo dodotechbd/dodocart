@@ -3,7 +3,7 @@ import { Button } from '../buttons';
 
 export const Banner = () => {
   return (
-    <div className="bg-gradient-to-r from-[#211C24] to-[#211C24] ... container mx-auto max-h-[600px] overflow-hidden ">
+    <div className="bg-gradient-to-r from-[#211C24] to-[#211C24] container mx-auto max-h-[600px] overflow-hidden">
       <div className="flex  justify-between lg:px-40 mt-32">
         <div className=" text-white leading-loose mt-16	">
           <p className="opacity-40 font-semibold">Pro.Beyond.</p>
