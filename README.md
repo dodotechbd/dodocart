@@ -21,7 +21,7 @@ What things you need to install the software and how to install them :
 1. Clone the git repository
 
    ```bash
-   git clone git@github.com:dodotechbd/dodocart
+   git clone https://github.com/dodotechbd/dodotech-ecommerce.git
    ```
 
 2. Go into the project directory
