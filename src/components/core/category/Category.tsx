@@ -2,33 +2,37 @@ import { Camera, Computer, HeadPhone, Phone } from '@components/icons';
 import { Gaming } from '@components/icons/Gaming';
 
 export function Category() {
+  const categoryStyle =
+    'flex flex-col justify-center items-center bg-[#EDEDED] py-6 px-[52px] rounded-2xl w-40 h-32 items-center';
+  const testStyle = 'font-medium text-base';
+
   return (
     <div className="lg:px-40 lg:py-20 ">
-      <h1 className="font-medium text-base leading-8 mb-4 ">Browse By Category</h1>
-      <div className="grid lg:grid-cols-6 gap-8">
-        <div className=" bg-[#EDEDED] py-6 px-[52px] rounded-2xl w-40 h-32 items-center">
+      <h1 className="font-medium text-2xl leading-8 mb-4 ">Browse By Category</h1>
+      <div className="grid lg:grid-cols-6 gap-8 whitespace-nowrap">
+        <div className={categoryStyle}>
           <Phone />
-          <p className="font-medium text-base">Phones</p>
+          <p className={testStyle}>Phones</p>
         </div>
-        <div className="bg-[#EDEDED] py-6 px-[52px] rounded-2xl w-40 h-32">
+        <div className={categoryStyle}>
           <Phone />
-          <p className="font-medium text-base">Smart Watches</p>
+          <p className={testStyle}>Smart Watches</p>
         </div>
-        <div className="bg-[#EDEDED] py-6 px-[52px] rounded-2xl w-40 h-32">
+        <div className={categoryStyle}>
           <Camera />
-          <p className="font-medium text-base">Cameras</p>
+          <p className={testStyle}>Cameras</p>
         </div>
-        <div className="bg-[#EDEDED] py-6 px-[52px] rounded-2xl w-40 h-32">
+        <div className={categoryStyle}>
           <HeadPhone />
-          <p className="font-medium text-base">Headphones</p>
+          <p className={testStyle}>Headphones</p>
         </div>
-        <div className="bg-[#EDEDED] py-6 px-[52px] rounded-2xl w-40 h-32">
+        <div className={categoryStyle}>
           <Computer />
-          <p className="font-medium text-base">Computers</p>
+          <p className={testStyle}>Computers</p>
         </div>
-        <div className="bg-[#EDEDED] py-6 px-[52px] rounded-2xl w-40 h-32">
+        <div className={categoryStyle}>
           <Gaming />
-          <p className="font-medium text-base">Gaming</p>
+          <p className={testStyle}>Gaming</p>
         </div>
       </div>
     </div>
