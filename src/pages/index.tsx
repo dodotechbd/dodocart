@@ -1,4 +1,4 @@
-import { Banner } from '@components/core';
+import { Banner } from '@components/home';
 
 export default function Home() {
   return (
