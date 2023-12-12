@@ -14,7 +14,6 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <div>
         <Nav />
-
         <Component {...pageProps} />
         <Footer />
       </div>
