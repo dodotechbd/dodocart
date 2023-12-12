@@ -5,10 +5,10 @@
   "prettier.singleQuote": true,
   "prettier.printWidth": 120,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.sortImports": true,
-    "source.organizeImports": true,
-    "source.fixAll.format": true
+    "source.fixAll.eslint": "explicit",
+    "source.sortImports": "explicit",
+    "source.organizeImports": "explicit",
+    "source.fixAll.format": "explicit"
   },
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#103362",
