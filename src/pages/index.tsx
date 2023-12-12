@@ -1,10 +1,11 @@
-import { Banner, Button } from '@components/core';
+import { Banner, Button, Category } from '@components/core';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <main className="container mx-auto my-8">
         <Banner />
+        <Category />
         <section className="lg:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card />
           <Card />
