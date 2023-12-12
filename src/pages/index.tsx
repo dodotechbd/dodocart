@@ -4,14 +4,6 @@ export default function Home() {
   return (
     <div className="min-h-screen ">
       <main className="container mx-auto my-8">
-        <section className="lg:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </section>
         <Button icon small className="mt-8 mx-auto">
           View More
         </Button>
