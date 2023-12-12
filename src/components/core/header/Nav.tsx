@@ -8,7 +8,7 @@ export const Nav = () => {
   const router = useRouter();
   const { route } = router;
   return (
-    <header>
+    <header className="bg-white text-black">
       <div className="flex items-center lg:justify-start justify-between gap-8 container mx-auto md:px-10 px-4 lg:py-4 py-6">
         <Link href="/">
           <Logo width="138" height="32" />
