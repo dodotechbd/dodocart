@@ -1,5 +1,4 @@
-import { Category } from '@components/core';
-import { Banner } from '@components/home';
+import { Banner, Category } from '@components/home';
 
 export default function Home() {
   return (

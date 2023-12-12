@@ -4,6 +4,7 @@ export * from './Camera';
 export * from './Cart';
 export * from './Computer';
 export * from './Favorite';
+export * from './Gaming';
 export * from './HeadPhone';
 export * from './Icon';
 export * from './Logo';
