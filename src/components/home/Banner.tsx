@@ -1,5 +1,5 @@
+import { Button } from '@components/core';
 import Image from 'next/image';
-import { Button } from '../buttons';
 
 export const Banner = () => {
   return (
