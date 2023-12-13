@@ -29,7 +29,6 @@ export const Range = ({ min = 0, max = 50000, onChange }: RangeProps) => {
     }
   }, [minVal, getPercent]);
 
-  // Set width of the range to decrease from the right side
   useEffect(() => {
     if (minValRef.current) {
       const minPercent = getPercent(+minValRef.current.value);
