@@ -18,6 +18,9 @@ const config: Config = {
         '16': '4rem',
         '18': '4.5rem',
       },
+      minWidth: {
+        '72': '18rem',
+      },
     },
   },
   plugins: [],
