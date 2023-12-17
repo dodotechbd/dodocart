@@ -12,6 +12,12 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      lineHeight: {
+        '12': '3rem',
+        '14': '3.5rem',
+        '16': '4rem',
+        '18': '4.5rem',
+      },
     },
   },
   plugins: [],

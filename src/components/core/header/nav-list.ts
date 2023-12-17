@@ -1,5 +1,17 @@
-import { CameraBold, ComputerBold, HeadPhoneBold, PhoneBold, SmartWatchBold } from '@components/icons';
-import { GamingBold } from '@components/icons/Gaming';
+import {
+  Camera,
+  CameraBold,
+  Computer,
+  ComputerBold,
+  Gaming,
+  GamingBold,
+  HeadPhone,
+  HeadPhoneBold,
+  Phone,
+  PhoneBold,
+  SmartWatch,
+  SmartWatchBold,
+} from '@components/icons';
 import { IIconProps } from '@interfaces';
 import { FC } from 'react';
 
@@ -7,6 +19,7 @@ export interface ILink {
   name: string;
   route: string;
   Icon?: FC<IIconProps>;
+  IconLight?: FC<IIconProps>;
 }
 
 export const links: ILink[] = [
@@ -17,10 +30,10 @@ export const links: ILink[] = [
 ];
 
 export const subLinks: ILink[] = [
-  { name: 'Phones', route: '/phones', Icon: PhoneBold },
-  { name: 'Computers', route: '/computers', Icon: ComputerBold },
-  { name: 'Smart Watches', route: '/smartwatches', Icon: SmartWatchBold },
-  { name: 'Cameras', route: '/cameras', Icon: CameraBold },
-  { name: 'Headphones', route: '/headphones', Icon: HeadPhoneBold },
-  { name: 'Gaming', route: '/gaming', Icon: GamingBold },
+  { name: 'Phones', route: '/phones', Icon: PhoneBold, IconLight: Phone },
+  { name: 'Computers', route: '/computers', Icon: ComputerBold, IconLight: Computer },
+  { name: 'Smart Watches', route: '/smartwatches', Icon: SmartWatchBold, IconLight: SmartWatch },
+  { name: 'Cameras', route: '/cameras', Icon: CameraBold, IconLight: Camera },
+  { name: 'Headphones', route: '/headphones', Icon: HeadPhoneBold, IconLight: HeadPhone },
+  { name: 'Gaming', route: '/gaming', Icon: GamingBold, IconLight: Gaming },
 ];
