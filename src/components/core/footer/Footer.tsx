@@ -1,12 +1,12 @@
-import { Logo, Phone } from '@components/icons';
+import { Facebook, Instagram, Logo, Tiktok, Twitter } from '@components/icons';
 import Link from 'next/link';
 
 export const Footer = () => {
   return (
-    <footer className="bg-black mt-5 text-white text-base lg:px-40 lg:py-24">
-      <div className="flex flex-row">
+    <footer className="bg-black text-white lg:px-40 lg:py-24 px-8 py-12 flex flex-col gap-32 justify-center lg:items-start items-center">
+      <div className="flex md:flex-row flex-col lg:justify-start justify-center ">
         <div className="basis-1/2">
-          <Link href="/">
+          <Link className="mx-auto" href="/">
             <Logo color="white" width="138" height="32" />
           </Link>
           <p className="text-[#CFCFCF] mt-6 lg:pr-20 pr-2">
@@ -36,13 +36,20 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex">
-        <Phone color="white" />
-        <Phone color="white" />
-        <Phone color="white" />
-        <Phone color="white" />
+      <div className="flex gap-9 justify-center lg:justify-start">
+        <Link href="#">
+          <Twitter />
+        </Link>
+        <Link href="#">
+          <Facebook />
+        </Link>
+        <Link href="#">
+          <Tiktok />
+        </Link>
+        <Link href="#">
+          <Instagram />
+        </Link>
       </div>
-      <p>&copy; 2023 DodoCart. All rights reserved.</p>
     </footer>
   );
 };
