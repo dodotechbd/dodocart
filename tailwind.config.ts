@@ -21,6 +21,20 @@ const config: Config = {
       minWidth: {
         '72': '18rem',
       },
+      width: {
+        '30': '7.5rem',
+        '101': '25.25rem',
+        '104': '26rem',
+      },
+      height: {
+        '112': '28rem',
+      },
+      rotate: {
+        '31': '31deg',
+      },
+      letterSpacing: {
+        moreTight: '-0.045em',
+      },
     },
   },
   plugins: [],
