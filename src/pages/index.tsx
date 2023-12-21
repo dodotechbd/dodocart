@@ -1,11 +1,11 @@
-import { Banner, Bigsell, Category } from '@components/home';
+import { Banner, BannerTwo, Category } from '@components/home';
 
 export default function Home() {
   return (
     <main>
       <Banner />
       <Category />
-      <Bigsell />
+      <BannerTwo />
     </main>
   );
 }
