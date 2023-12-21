@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const BannerTwo = () => {
   return (
     <div className="bg-gradient-to-r h-112 from-[#2E2E2E] to-[#000000]">
-      <div className="h-full flex flex-col items-center justify-center container mx-auto text-white relative overflow-hidden">
+      <div className="h-full flex flex-col items-center justify-center  mx-auto text-white relative overflow-hidden">
         <h1 className="text-7xl font-extralight tracking-tight">
           Big Summer <span className="font-medium ">Sale</span>
         </h1>
