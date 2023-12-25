@@ -17,15 +17,21 @@ export const BannerTwo = () => {
           height={400}
           src="/images/laptop.png"
           alt="image"
-          className="absolute w-80 left-56 -top-56"
+          className="absolute lg:w-80 w-24 lg:left-56 left-14 lg:-top-56 -top-10 rotate-[80deg]"
         />
-        <Image width={400} height={400} src="/images/pc.png" alt="image" className="absolute w-60 left-10 top-1 z-10" />
+        <Image
+          width={400}
+          height={400}
+          src="/images/pc.png"
+          alt="image"
+          className="absolute lg:w-60 w-36 lg:left-10 lg:top-1 -left-24 -top-4 z-10"
+        />
         <Image
           width={400}
           height={400}
           src="/images/tablet.png"
           alt="image-2"
-          className="absolute w-104 -left-20 top-44 scale-x-[-1]"
+          className="absolute lg:w-104 lg:-left-20 -left-14 lg:top-44 top-96 scale-x-[-1]"
         />
         <Image
           height={400}
