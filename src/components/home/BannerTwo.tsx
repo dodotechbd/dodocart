@@ -5,7 +5,7 @@ export const BannerTwo = () => {
   return (
     <div className="bg-gradient-to-r h-112 from-[#2E2E2E] to-[#000000]">
       <div className="h-full flex flex-col items-center justify-center  mx-auto text-white relative overflow-hidden">
-        <h1 className="text-7xl font-extralight tracking-tight">
+        <h1 className="lg:text-7xl text-5xl font-extralight tracking-tight">
           Big Summer <span className="font-medium ">Sale</span>
         </h1>
         <p className="text-[#787878] leading-10">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
@@ -31,21 +31,21 @@ export const BannerTwo = () => {
           height={400}
           src="/images/tablet.png"
           alt="image-2"
-          className="absolute lg:w-104 lg:-left-20 -left-14 lg:top-44 top-96 scale-x-[-1]"
+          className="absolute lg:w-104 lg:-left-20 -left-40 lg:top-44 top-96 scale-x-[-1]"
         />
         <Image
           height={400}
           width={400}
           src="/images/i-phone.png"
           alt="phone"
-          className="absolute w-30 -rotate-31 top-0 -right-6"
+          className="absolute lg:w-30 w-20 lg:-rotate-31 -rotate-45 lg:top-0 -top-10 lg:-right-6 -right-7"
         />
         <Image
           height={400}
           width={400}
           src="/images/watch.png"
           alt="watch"
-          className="absolute w-101 -bottom-28 -right-2"
+          className="absolute lg:w-101 w-52 lg:-bottom-28 -bottom-20 lg:-right-2 -right-24"
         />
       </div>
     </div>
