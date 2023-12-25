@@ -17,7 +17,7 @@ export const BannerTwo = () => {
           height={400}
           src="/images/laptop.png"
           alt="image"
-          className="absolute lg:w-80 w-24 lg:left-56 left-14 lg:-top-56 -top-10 rotate-[80deg]"
+          className="absolute lg:w-80 w-28 lg:left-56 left-36 lg:-top-56 -top-10 lg:scale-x-100 scale-x-150 "
         />
         <Image
           width={400}
