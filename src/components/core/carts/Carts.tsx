@@ -6,17 +6,17 @@ export const Carts = () => {
       <div>
         <ul className="flex gap-8 mb-8 font-medium text-lg leading-8 text-[#8B8B8B]">
           <li className="hover:underline text-black">
-            <Link href="#">New Arrival</Link>
+            <Link href="#product">New Arrival</Link>
           </li>
           <li className="hover:underline hover:text-black">
-            <Link href="/cart">Bestseller</Link>
+            <Link href="#product">Bestseller</Link>
           </li>
           <li className="hover:underline hover:text-black">
-            <Link href="#">Featured Products</Link>
+            <Link href="#product">Featured Products</Link>
           </li>
         </ul>
       </div>
-      <div className="grid lg:grid-cols-4 gap-4">
+      <div id="#product" className="grid lg:grid-cols-4 gap-4">
         <ProductCart />
         <ProductCart />
         <ProductCart />
