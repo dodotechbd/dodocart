@@ -3,7 +3,7 @@ import { ILink, subLinks } from './nav-list';
 
 export const SubNav = () => {
   return (
-    <div className="container mx-auto lg:flex gap-12 py-2 items-center justify-center md:px-10 px-4 text-white">
+    <div className="container mx-auto lg:flex hidden gap-12 py-2 items-center justify-center md:px-10 px-4 text-white">
       {subLinks.map((link: ILink, idx: number) => {
         const { name, route, Icon } = link;
         return (
