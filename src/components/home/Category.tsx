@@ -47,7 +47,6 @@ export function Category() {
     }
   };
 
-  console.log(scrollContainerRef.current?.offsetHeight);
   return (
     <div className="lg:px-40 lg:py-20 px-4 py-16 container mx-auto">
       <div className="flex items-center justify-between lg:mb-8 mb-12">
