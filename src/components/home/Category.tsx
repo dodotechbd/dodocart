@@ -31,8 +31,8 @@ export function Category() {
           }
         }
       } else {
-        if (scrollContainer.offsetWidth <= 1120) {
-          const max = 1120 - scrollContainer.offsetWidth;
+        if (scrollContainer.offsetWidth <= 1150) {
+          const max = 1150 - scrollContainer.offsetWidth;
           if (max > 180) {
             if (scrollPosition <= max) {
               if (max - scrollPosition > 180) {
@@ -46,6 +46,8 @@ export function Category() {
       }
     }
   };
+
+  console.log(scrollContainerRef.current?.offsetHeight);
   return (
     <div className="lg:px-40 lg:py-20 px-4 py-16 container mx-auto">
       <div className="flex items-center justify-between lg:mb-8 mb-12">
@@ -62,7 +64,7 @@ export function Category() {
       <div className="w-full relative">
         <div
           ref={scrollContainerRef}
-          className="scrollbar-hide flex right-0 relative flex-nowrap overflow-x-scroll gap-8 scroll-smooth"
+          className="scrollbar-hide flex justify-between right-0 relative flex-nowrap overflow-x-scroll gap-8 scroll-smooth"
         >
           {subLinks.map((link: ILink, idx: number) => {
             const { IconLight, name, route } = link;
