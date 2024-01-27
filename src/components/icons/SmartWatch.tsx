@@ -5,7 +5,7 @@ export const SmartWatch = (props: IIconProps) => {
   const { title = 'SmartWatch', size = '48', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 48 48" size={size} title={title} {...otherProps}>
-      <g clip-path="url(#clip0_153_296)">
+      <g clipPath="url(#clip0_153_296)">
         <path
           d="M30 12H18C14.6863 12 12 14.6863 12 18V30C12 33.3137 14.6863 36 18 36H30C33.3137 36 36 33.3137 36 30V18C36 14.6863 33.3137 12 30 12Z"
           stroke={props.color || 'black'}

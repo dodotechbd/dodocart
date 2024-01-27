@@ -5,7 +5,7 @@ export const Gaming = (props: IIconProps) => {
   const { title = 'Gaming', size = '48', ...otherProps } = props;
   return (
     <Icon viewBox="0 0 48 48" size={size} title={title} {...otherProps}>
-      <g clip-path="url(#clip0_153_317)">
+      <g clipPath="url(#clip0_153_317)">
         <path
           d="M40 12H8C5.79086 12 4 13.7909 4 16V32C4 34.2091 5.79086 36 8 36H40C42.2091 36 44 34.2091 44 32V16C44 13.7909 42.2091 12 40 12Z"
           stroke={props.color || 'black'}

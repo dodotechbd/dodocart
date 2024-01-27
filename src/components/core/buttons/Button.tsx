@@ -11,7 +11,7 @@ interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button = ({ children, small, light, filled, className, icon, ...rest }: IProps) => {
   const disabled = rest.disabled ? rest.disabled : false;
-  const baseClass = 'rounded-md font-medium border duration-200 flex items-center ';
+  const baseClass = 'rounded-md font-medium border duration-200 flex items-center justify-center ';
   const padding = small ? 'py-3 px-16 ' : 'py-4 px-14 ';
   const color = light
     ? `border-white bg-white ${
