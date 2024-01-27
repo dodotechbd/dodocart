@@ -27,7 +27,9 @@ export const Nav = () => {
             <li key={idx}>
               <Link
                 href={link.route}
-                className={`font-medium ${link.route === route ? 'opacity-100' : 'opacity-30 hover:opacity-100'}`}
+                className={`font-medium duration-200 ${
+                  link.route === route ? 'opacity-100' : 'opacity-30 hover:opacity-100'
+                }`}
               >
                 {link.name}
               </Link>
@@ -41,9 +43,10 @@ export const Nav = () => {
           <button>
             <Cart />
           </button>
-          <button>
-            <User />
-          </button>
+          <Link href="/signin">
+            <button className="rounded-lg hover:bg-black/10 duration-200 leading-5 px-5 py-2 font-medium">Login</button>
+            <User className="hidden" />
+          </Link>
         </div>
         <button className="lg:hidden">
           <Burger size={40} fill="#080341" />
