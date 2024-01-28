@@ -15,16 +15,17 @@ export const ProductFeatuers = () => {
           </div>
         </div>
         <div className="flex">
-          <div className="flex place-items-center bg-[#EDEDED]">
-            <Image className="ml-[-90px]" src="/images/headphone.png" width={200} height={200} alt="headphones" />
-            <div className="px-12">
-              <h1 className="text-[29px]">Apple Vision Pro</h1>
+          <div className="flex place-items-center bg-[#EDEDED] lg:py-12">
+            <Image className="ml-[-65px] pr-10" src="/images/headphone.png" width={200} height={200} alt="headphones" />
+            <div className="">
+              <h1 className="text-[29px]">Apple</h1>
+              <h1 className="text-[29px]">Vision Pro</h1>
               <p className="text-sm">An immersive way to experience entertainment</p>
             </div>
           </div>
           <div className="flex place-items-center overflow-hidden bg-[#353535] text-[#FFFFFF]">
             <Image className="ml-[-50px]" src="/images/headphones.png" width={200} height={200} alt="headphones" />
-            <div className="px-12">
+            <div className="">
               <h1 className="text-[29px]">Apple AirPods Max</h1>
               <p className="text-sm">Computational audio. Listen, its powerful</p>
             </div>
