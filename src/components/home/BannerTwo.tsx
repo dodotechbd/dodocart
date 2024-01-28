@@ -8,7 +8,7 @@ export const BannerTwo = () => {
         <h1 className="lg:text-7xl text-5xl font-extralight tracking-tight">
           Big Summer <span className="font-medium ">Sale</span>
         </h1>
-        <p className="text-[#787878] leading-10">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+        <p className="text-[#787878] leading-10">Commodo fame vitae vitae leo mauris in. Eu consequat.</p>
         <Button light className="text-[#FFFFFF] mt-10 mx-auto" small>
           Shop Now
         </Button>
