@@ -2,9 +2,9 @@ import Link from 'next/link';
 import { ProductCart } from './ProductCart';
 export const Carts = () => {
   return (
-    <div className="container lg:px-40 mx-auto mt-5 ">
+    <div className="container lg:px-40 px-3 mx-auto mt-5 mb-3 ">
       <div>
-        <ul className="flex gap-8 mb-8 font-medium text-lg leading-8 text-[#8B8B8B]">
+        <ul className="flex lg:gap-8 gap-3 mb-8 font-medium text-lg leading-8 text-[#8B8B8B]">
           <li className="hover:underline text-black">
             <Link href="#product">New Arrival</Link>
           </li>
