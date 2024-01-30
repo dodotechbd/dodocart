@@ -60,6 +60,7 @@ export const ProductFeatuers = () => {
             width={660}
             alt="image"
           />
+          <div className="bg-gradient-to-r from-[#7D7E82] from-10% via-[#AFB0B5] via-30% to-[#AEAFB4] to-90% w-96 h-6 ml-20 rounded-b-lg"></div>
         </div>
       </div>
     </div>
