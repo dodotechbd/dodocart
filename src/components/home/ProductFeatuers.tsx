@@ -7,9 +7,9 @@ export const ProductFeatuers = () => {
       <div className="">
         <div className="lg:flex place-items-center pr-12 lg:w-[720px]">
           <Image className="lg:ml-[-110px]" src="/images/gameRemote.png" alt="image" width={400} height={400} />
-          <div>
-            <h1 className="font-medium text-5xl py-3">Playstation5</h1>
-            <p className="text-sm text-[#909090]">
+          <div className="text-center lg:text-start">
+            <h1 className="font-medium lg:text-5xl text-3xl  py-3">Playstation5</h1>
+            <p className="text-sm text-[#909090] ">
               Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.
             </p>
           </div>
@@ -23,7 +23,7 @@ export const ProductFeatuers = () => {
               height={200}
               alt="headphones"
             />
-            <div className="">
+            <div className="text-center lg:text-start">
               <h1 className="text-[29px] font-light">Apple</h1>
               <h1 className="text-[29px] font-light">
                 Vision <span className="font-medium">Pro</span>
@@ -39,7 +39,7 @@ export const ProductFeatuers = () => {
               height={200}
               alt="headphones"
             />
-            <div className="pr-6 ">
+            <div className="pr-6 text-center lg:text-start p-1 ">
               <h1 className="text-[29px] font-light">
                 Apple AirPods <span className="font-medium">Max</span>
               </h1>
@@ -49,14 +49,14 @@ export const ProductFeatuers = () => {
         </div>
       </div>
       <div className="lg:flex place-items-center bg-[#EDEDED] lg:pl-14 p-3">
-        <div className=" mb-3">
+        <div className=" mb-3 text-center lg:text-start">
           <h2 className="font-extralight lg:text-[64px] text-[30px]">
             Macbook <span className="font-medium">Air</span>
           </h2>
           <p className="font-medium text-sm text-[#909090] leading-6">
             The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.
           </p>
-          <Button small className="mx-auto my-2">
+          <Button small className="mx-auto lg:mx-0 my-2">
             Show Now
           </Button>
         </div>
