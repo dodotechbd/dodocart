@@ -11,7 +11,7 @@ export const Nav = () => {
   const [open, setOpen] = useState(false);
   return (
     <header className="bg-white text-black ">
-      <div className="lg:flex flex-row items-center lg:justify-start justify-between gap-8 container mx-auto md:px-10 px-4 lg:py-4 py-6 z-40">
+      <div className="lg:flex flex-row items-center lg:justify-start justify-between gap-8 container mx-auto md:px-10 px-4 lg:py-4 py-6">
         <Link href="/">
           <Logo width="138" height="32" />
         </Link>
@@ -26,7 +26,7 @@ export const Nav = () => {
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className="lg:hidden absolute right-8 top-5 cursor-pointer text-3xl text-red-700"
+          className="lg:hidden absolute right-8 z-20 top-5 cursor-pointer text-3xl text-red-700"
         >
           {open ? (
             <button>
@@ -39,12 +39,12 @@ export const Nav = () => {
           )}
         </div>
         <ul
-          className={`lg:flex  lg:gap-12 lg:h-auto  whitespace-nowrap mx-auto duration-500 ease-in ${
-            open ? 'opacity-100 ' : 'lg:opacity-100 opacity-0'
+          className={`lg:flex  lg:gap-12 md:relative absolute left-0 whitespace-nowrap mx-auto  ${
+            open ? 'opacity-100 text-black bg-white w-[382px] duration-700 scale-y-150' : 'lg:opacity-100 opacity-0  '
           }`}
         >
           {links.map((link: ILink, idx: number) => (
-            <li key={idx} className="p-2 m-2  rounded-md text-center w-full">
+            <li key={idx} className="p-2 m-2  rounded-md text-center w-full ">
               <Link
                 href={link.route}
                 className={`font-medium ${link.route === route ? 'opacity-100 z-10' : 'opacity-30 hover:opacity-100'}`}
