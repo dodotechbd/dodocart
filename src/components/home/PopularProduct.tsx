@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const PopularProduct = () => {
   return (
-    <div id="default-carousel" data-carousel="slide">
+    <div>
       <div className="lg:flex mx-auto my-10 relative h-[38rem] overflow-hidden rounded-lg">
-        <div className="mb-5  duration-700 ease-in-out" data-carousel-item>
+        <div className="mb-5">
           <div className="">
             <div className="relative">
               <Image
@@ -36,7 +36,7 @@ const PopularProduct = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-[#F9F9F9] overflow-hidden  duration-700 ease-in-out" data-carousel-item>
+        <div className=" bg-[#F9F9F9] overflow-hidden  duration-700 ease-in-out">
           <div>
             <div>
               <Image src="/images/phones.png" className="ml-[80px]" height={471} width={550} alt="box headphone" />
@@ -54,7 +54,7 @@ const PopularProduct = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-[#EAEAEA]  duration-700 ease-in-out" data-carousel-item>
+        <div className=" bg-[#EAEAEA]  duration-700 ease-in-out">
           <div>
             <div>
               <Image src="/images/iphone.png" className="mx-auto" height={380} width={320} alt="box headphone" />
@@ -72,7 +72,7 @@ const PopularProduct = () => {
             </div>
           </div>
         </div>
-        <div className="py-5 bg-[#2C2C2C] text-white overflow-hidden  duration-700 ease-in-out" data-carousel-item>
+        <div className="py-5 bg-[#2C2C2C] text-white overflow-hidden  duration-700 ease-in-out">
           <div>
             <div>
               <Image src="/images/monitor.png" className="ml-[30%]" height={400} width={900} alt="box headphone" />
