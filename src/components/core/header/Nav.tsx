@@ -1,15 +1,17 @@
 import { Burger, Cart, Favorite, Logo, Search, User } from '@components/icons';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 import { SubNav } from './SubNav';
 import { ILink, links } from './nav-list';
 
 export const Nav = () => {
   const router = useRouter();
   const { route } = router;
+  const [open, setOpen] = useState(false);
   return (
-    <header className="bg-white text-black">
-      <div className="flex items-center lg:justify-start justify-between gap-8 container mx-auto md:px-10 px-4 lg:py-4 py-6">
+    <header className="bg-white text-black ">
+      <div className="lg:flex flex-row items-center lg:justify-start justify-between gap-8 container mx-auto md:px-10 px-4 lg:py-4 py-6 z-40">
         <Link href="/">
           <Logo width="138" height="32" />
         </Link>
@@ -22,12 +24,30 @@ export const Nav = () => {
             placeholder="Search"
           />
         </div>
-        <ul className="lg:flex hidden gap-12 whitespace-nowrap">
+        <div
+          onClick={() => setOpen(!open)}
+          className="lg:hidden absolute right-8 top-5 cursor-pointer text-3xl text-red-700"
+        >
+          {open ? (
+            <button>
+              <p>X</p>
+            </button>
+          ) : (
+            <button>
+              <Burger size={40} fill="#080341" />
+            </button>
+          )}
+        </div>
+        <ul
+          className={`lg:flex  lg:gap-12 lg:h-auto  whitespace-nowrap mx-auto duration-500 ease-in ${
+            open ? 'opacity-100 ' : 'lg:opacity-100 opacity-0'
+          }`}
+        >
           {links.map((link: ILink, idx: number) => (
-            <li key={idx}>
+            <li key={idx} className="p-2 m-2  rounded-md text-center w-full">
               <Link
                 href={link.route}
-                className={`font-medium ${link.route === route ? 'opacity-100' : 'opacity-30 hover:opacity-100'}`}
+                className={`font-medium ${link.route === route ? 'opacity-100 z-10' : 'opacity-30 hover:opacity-100'}`}
               >
                 {link.name}
               </Link>
@@ -45,9 +65,6 @@ export const Nav = () => {
             <User />
           </button>
         </div>
-        <button className="lg:hidden">
-          <Burger size={40} fill="#080341" />
-        </button>
       </div>
       <div className="bg-[#2E2E2E]">
         <SubNav />
