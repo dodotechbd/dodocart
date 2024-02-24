@@ -1,3 +1,4 @@
+import { Input } from '@components/core/input';
 import { FacebookRound, Google } from '@components/icons';
 import Link from 'next/link';
 
@@ -6,30 +7,19 @@ export const SignInForm = () => {
     <div className="max-w-sm w-11/12 lg:w-full mx-auto py-8 lg:py-20">
       <h2 className="text-2xl mb-8">Welcome Back!</h2>
       <form action="#">
-        <div className="mb-5">
-          <label htmlFor="#" className="font-medium">
-            Email
-          </label>
-          <input
-            type="email"
-            className="w-full mt-1.5 px-3 py-2 rounded-md border-black/20 focus:border-black border outline-none"
-            placeholder="joe@email.com"
-          />
-        </div>
-        <div className="mb-8">
-          <div className="flex justify-between items-end">
-            <label htmlFor="#" className="font-medium">
-              Password
-            </label>
-            <Link href="/reset" className="font-medium text-sm hover:underline">
-              forgot password?
-            </Link>
+        <div className="mb-8 space-y-5">
+          <Input label="Email" type="email" placeholder="joe@email.com" required />
+          <div>
+            <div className="flex justify-between items-end">
+              <label htmlFor="#password" className="font-medium">
+                Password <span className="text-red-500">*</span>
+              </label>
+              <Link href="/reset" className="font-medium text-sm hover:underline">
+                forgot password?
+              </Link>
+            </div>
+            <Input id="password" type="password" placeholder="Enter 8 character or more" required />
           </div>
-          <input
-            type="password"
-            className="w-full mt-1.5 px-3 py-2 rounded-md border-black/20 focus:border-black border outline-none"
-            placeholder="Enter 8 character or more"
-          />
         </div>
         <button
           type="submit"
